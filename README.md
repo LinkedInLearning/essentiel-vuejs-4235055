@@ -1,10 +1,11 @@
 # Nom final de la formation
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentie de Vue.js`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Si vous souhaitez apporter une solution web moderne à vos applications, découvrez cette formation consacrée à Vue.js. Maheva Dessart, développeuse web et experte en programmation, vous présente ce framework JavaScript populaire utilisé par de nombreuses entreprises telles que Google, Adobe ou Microsoft. Ce cours s'adresse aux développeurs débutants ou de niveau intermédiaire qui ont de bonnes connaissances en HTML, CSS et JavaScript. Vous aborderez un ensemble évolué d'outils qui permet de créer des applications puissantes et performantes, et de vous faire gagner du temps. Ainsi, vous verrez comment développer une application de manière complète et intuitive.
+
 
 ## Instructions
 
@@ -27,7 +28,7 @@ La branche master correspond au code à la fin de la formation.
 
 ### Formateur
 
-**Nom du formateur** 
+**Maheva DESSART** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
