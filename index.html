@@ -31,6 +31,31 @@
                 <p v-else>
                     <span class="price">{{ price }} €</span>
                 </p>
+
+
+                <strong>Ingrédients </strong>
+                <div>
+                    <span v-for="ingredient in ingredients">
+                        {{ ingredient + ", "}}
+                    </span>
+                </div>
+                <br />
+
+                <div class="sauces">
+                    <strong>Sauces au choix</strong>
+                    <ul>
+                        <li v-for="sauce in sauces"> {{ sauce.type }}</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <strong>Valeurs nutritionnelles pour 100 grammes</strong>
+                    <ul>
+                        <li v-for="(value, name) in energy">
+                            {{ name }} : {{ value }}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
