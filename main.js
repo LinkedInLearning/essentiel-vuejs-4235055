@@ -7,7 +7,8 @@ const app = createApp({
             price: 12,
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
-            superSale: true
+            superSale: false,
+            notAvailable: true
         }
     }
 })
