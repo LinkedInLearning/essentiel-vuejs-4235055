@@ -35,7 +35,7 @@
 
                 <strong>Ingrédients </strong>
                 <div>
-                    <span v-for="ingredient in ingredients">
+                    <span v-for="(ingredient, index) in ingredients" :key="index">
                         {{ ingredient + ", "}}
                     </span>
                 </div>
@@ -44,14 +44,14 @@
                 <div class="sauces">
                     <strong>Sauces au choix</strong>
                     <ul>
-                        <li v-for="sauce in sauces"> {{ sauce.type }}</li>
+                        <li v-for="sauce in sauces" :key="sauce.id"> {{ sauce.type }}</li>
                     </ul>
                 </div>
 
                 <div>
                     <strong>Valeurs nutritionnelles pour 100 grammes</strong>
                     <ul>
-                        <li v-for="(value, name) in energy">
+                        <li v-for="(value, name, index) in energy" :key="index">
                             {{ name }} : {{ value }}
                         </li>
                     </ul>
@@ -59,8 +59,8 @@
             </div>
         </div>
     </div>
-    <!-- JS -->
 
+    <!-- JS -->
     <script type="importmap">
     {
         "imports" : {
