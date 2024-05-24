@@ -1,4 +1,6 @@
-const app = Vue.createApp({
+import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+const app = createApp({
     data() {
         return {
             name: "Pizza Royale",
@@ -6,3 +8,5 @@ const app = Vue.createApp({
         }
     }
 })
+
+app.mount('#app');
