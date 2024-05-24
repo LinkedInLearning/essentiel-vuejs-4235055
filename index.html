@@ -17,7 +17,20 @@
             </div>
             <div class="product-description">
                 <h1>{{ name }}</h1>
-                <span class="price">{{ price }}</span>
+                <!-- Doit s'afficher si la promotion superSale existe -->
+                <p v-if="superSale">
+                    <span class="sale">{{ price }} € </span>
+                    <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
+                </p>
+                <!-- Doit s'afficher si la promotion classicSale existe -->
+                <p v-else-if="classicSale">
+                    <span class="sale">{{ price }} € </span>
+                    <span class="new-price"> {{ price - 2}} € PROMOTION</span>
+                </p>
+                <!-- Doit s'afficher si aucune promotion existe -->
+                <p v-else>
+                    <span class="price">{{ price }} €</span>
+                </p>
             </div>
         </div>
     </div>

@@ -20,6 +20,12 @@ img {
     padding: 15px;
 }
 
+.new-price {
+    color: #c10a28;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .product-description {
     width: 47%;
 }
@@ -34,6 +40,12 @@ img {
     flex-wrap: wrap;
     margin: 40px 0px 40px 40px;
     width: 80%;
+}
+
+.sale {
+    color: #616161;
+    margin-right: 5px;
+    text-decoration: line-through;
 }
 
 span.price {
