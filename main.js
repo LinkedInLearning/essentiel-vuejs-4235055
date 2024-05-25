@@ -8,8 +8,8 @@ const app = createApp({
             price: 12,
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
-            superSale: true,
-            notAvailable: false,
+            superSale: false,
+            notAvailable: true,
             ingredients: [
                 "Olives",
                 "Poulet roti",

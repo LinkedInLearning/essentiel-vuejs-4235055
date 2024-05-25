@@ -98,7 +98,8 @@
                 </div>
 
                 <!-- Bouton d'ajout au panier -->
-                <button @click="addProduct()">Ajouter à ma commande</button>
+                <button :class="{ notActiveBtn : notAvailable  === true}" :disabled="notAvailable === true"
+                    @click="addProduct()">Ajouter à ma commande</button>
                 <br /><br />
             </div>
         </div>
