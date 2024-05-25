@@ -3,7 +3,8 @@ import { createApp } from 'vue'
 const app = createApp({
     data() {
         return {
-            name: "Pizza Royale",
+            product: "Pizza",
+            type: "Orientale",
             price: 12,
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
@@ -44,21 +45,29 @@ const app = createApp({
             promo: ""
         }
     },
+
     methods: {
         addProduct() {
             this.nbrProduct += 1;
             if (this.superSale) {
-                this.totalPrice += this.price - 5;
+                this.totalPrice += this.price - 5
             } else if (this.classicSale) {
-                this.totalPrice += this.price - 2;
+                this.totalPrice += this.price - 2
             } else {
-                this.totalPrice += this.price;
+                this.totalPrice += this.price
             }
         },
+
         updateImage(newLinkImage) {
-            this.image = newLinkImage;
-        },
+            this.image = newLinkImage
+        }
     },
+
+    computed: {
+        title() {
+            return this.product + " " + this.type
+        }
+    }
 })
 
 app.mount("#app")

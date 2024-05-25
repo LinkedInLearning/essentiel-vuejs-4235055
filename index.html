@@ -22,7 +22,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{ name }}</td>
+                        <td>{{ title }}</td>
                         <td>{{ nbrProduct }}</td>
                     </tr>
                     <tr>
@@ -56,7 +56,8 @@
 
             <!-- Description du produit -->
             <div class="product-description">
-                <h1>{{ name }}</h1>
+                <h1>{{ title }}</h1>
+
                 <p v-show="notAvailable">Momentanément indisponible</p>
 
                 <p v-if="superSale">
@@ -66,6 +67,9 @@
                 <p v-else-if="classicSale">
                     <span class="sale">{{ price }} € </span>
                     <span class="new-price"> {{ price - 2}} € PROMOTION</span>
+                </p>
+                <p v-else>
+                    <span class="price">{{ price }} €</span>
                 </p>
 
                 <br />
