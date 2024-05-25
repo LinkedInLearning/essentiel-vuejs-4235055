@@ -3,7 +3,7 @@
 
 #app {
     display: flex;
-    /*flex-direction: row-reverse;*/
+    flex-direction: row-reverse;
 }
 
 body {
@@ -81,18 +81,6 @@ input {
     color: #616161;
     margin-right: 5px;
     text-decoration: line-through;
-}
-
-.sauces li {
-    padding: 5px 15px;
-    margin: 10px 0px;
-    width: fit-content;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.sauces li:hover {
-    color: black;
 }
 
 span.price {

@@ -11,43 +11,66 @@
 
 <body>
     <div id="app">
+
+        <!-- Section Panier -->
+        <div class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Votre commande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ name }}</td>
+                        <td>{{nbrProduct}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total à payer</td>
+                        <td>
+                            <div>{{totalPrice}}</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section Produit -->
         <div class="product-section">
+
+            <!-- Image du produit -->
             <div class="product-image">
                 <img :src="image" />
             </div>
+
+            <!-- Description du produit -->
             <div class="product-description">
                 <h1>{{ name }}</h1>
-
                 <p v-show="notAvailable">Momentanément indisponible</p>
 
-                <p v-if="superSale">
+                <p v-if="sale">
                     <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
-                </p>
-                <p v-else-if="classicSale">
-                    <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 2}} € PROMOTION</span>
+                    <span class="new-price"> {{ price - 5}} € PROMOTION</span>
                 </p>
                 <p v-else>
                     <span class="price">{{ price }} €</span>
                 </p>
 
-
+                <br />
                 <strong>Ingrédients </strong>
                 <div>
-                    <span v-for="(ingredient, index) in ingredients" :key="index">
-                        {{ ingredient + ", "}}
+                    <span v-for="(ingredient, index) in ingredients" :key="index">{{ ingredient + ", "}}
                     </span>
                 </div>
                 <br />
-
                 <div class="sauces">
                     <strong>Sauces au choix</strong>
                     <ul>
-                        <li v-for="sauce in sauces" :key="sauce.id"> {{ sauce.type }}</li>
+                        <li v-for="sauce in sauces" :key="sauce.id">
+                            {{ sauce.type }}
+                        </li>
                     </ul>
                 </div>
-
                 <div>
                     <strong>Valeurs nutritionnelles pour 100 grammes</strong>
                     <ul>
@@ -56,6 +79,10 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Bouton d'ajout au panier -->
+                <button @click="nbrProduct += 1; totalPrice = price * nbrProduct">Ajouter à ma commande</button>
+                <br /><br />
             </div>
         </div>
     </div>
@@ -69,7 +96,6 @@
     }
     </script>
     <script type="module" src="main.js"></script>
-
 </body>
 
 </html>

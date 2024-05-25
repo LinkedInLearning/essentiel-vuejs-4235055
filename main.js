@@ -8,7 +8,7 @@ const app = createApp({
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
             superSale: false,
-            notAvailable: true,
+            notAvailable: false,
             ingredients: [
                 "Olives",
                 "Poulet roti",
@@ -29,7 +29,7 @@ const app = createApp({
                     id: 1002,
                     type: "Crème Fraiche",
                     color: "#e9cb8f",
-                    image: "assets/images/pizza1-creme.jpg.jpg",
+                    image: "assets/images/pizza1-creme.jpg",
                 },
             ],
             energy: {
@@ -39,6 +39,8 @@ const app = createApp({
                 Proteines: 9.62,
                 Sel: 11,
             },
+            totalPrice: 0,
+            nbrProduct: 0
         }
     }
 })
