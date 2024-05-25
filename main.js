@@ -40,7 +40,8 @@ const app = createApp({
                 Sel: 11,
             },
             totalPrice: 0,
-            nbrProduct: 0
+            nbrProduct: 0,
+            promo: ""
         }
     }
 })
