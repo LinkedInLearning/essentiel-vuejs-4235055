@@ -59,9 +59,13 @@
                 <h1>{{ name }}</h1>
                 <p v-show="notAvailable">Momentanément indisponible</p>
 
-                <p v-if="sale">
+                <p v-if="superSale">
                     <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 5}} € PROMOTION</span>
+                    <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
+                </p>
+                <p v-else-if="classicSale">
+                    <span class="sale">{{ price }} € </span>
+                    <span class="new-price"> {{ price - 2}} € PROMOTION</span>
                 </p>
                 <p v-else>
                     <span class="price">{{ price }} €</span>
