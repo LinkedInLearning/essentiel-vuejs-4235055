@@ -42,7 +42,8 @@ const app = createApp({
             },
             totalPrice: 0,
             nbrProduct: 0,
-            promo: ""
+            promo: "",
+            isValidMsg: ""
         }
     },
 
@@ -67,6 +68,19 @@ const app = createApp({
         title() {
             return this.product + " " + this.type
         }
+    },
+
+    watch: {
+        promo(newValue, oldValue) {
+            if (newValue == "") {
+                this.isValidMsg = ""
+            }
+            else if (newValue == "royale") {
+                this.isValidMsg = "CODE PROMO VALIDE !"
+            } else {
+                this.isValidMsg = "code promo invalide"
+            }
+        },
     }
 })
 

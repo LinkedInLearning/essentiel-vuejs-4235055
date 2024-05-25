@@ -77,6 +77,12 @@ input {
     width: 80%;
 }
 
+.promoValid {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .sale {
     color: #616161;
     margin-right: 5px;
