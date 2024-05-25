@@ -7,7 +7,7 @@ const app = createApp({
             price: 12,
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
-            superSale: false,
+            superSale: true,
             notAvailable: false,
             ingredients: [
                 "Olives",
@@ -43,7 +43,22 @@ const app = createApp({
             nbrProduct: 0,
             promo: ""
         }
-    }
+    },
+    methods: {
+        addProduct() {
+            this.nbrProduct += 1;
+            if (this.superSale) {
+                this.totalPrice += this.price - 5;
+            } else if (this.classicSale) {
+                this.totalPrice += this.price - 2;
+            } else {
+                this.totalPrice += this.price;
+            }
+        },
+        updateImage(newLinkImage) {
+            this.image = newLinkImage;
+        },
+    },
 })
 
 app.mount("#app")

@@ -59,12 +59,13 @@
                 <h1>{{ name }}</h1>
                 <p v-show="notAvailable">Momentanément indisponible</p>
 
-                <p v-if="sale">
+                <p v-if="superSale">
                     <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 5}} € PROMOTION</span>
+                    <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
                 </p>
-                <p v-else>
-                    <span class="price">{{ price }} €</span>
+                <p v-else-if="classicSale">
+                    <span class="sale">{{ price }} € </span>
+                    <span class="new-price"> {{ price - 2}} € PROMOTION</span>
                 </p>
 
                 <br />
@@ -77,7 +78,7 @@
                 <div class="sauces">
                     <strong>Sauces au choix</strong>
                     <ul>
-                        <li v-for="sauce in sauces" :key="sauce.id">
+                        <li @mouseover="updateImage(sauce.image)" v-for="sauce in sauces" :key="sauce.id">
                             {{ sauce.type }}
                         </li>
                     </ul>
@@ -92,7 +93,7 @@
                 </div>
 
                 <!-- Bouton d'ajout au panier -->
-                <button @click="nbrProduct += 1; totalPrice = price * nbrProduct">Ajouter à ma commande</button>
+                <button @click="addProduct()">Ajouter à ma commande</button>
                 <br /><br />
             </div>
         </div>
