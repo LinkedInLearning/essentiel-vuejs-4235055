@@ -9,7 +9,7 @@ const app = createApp({
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
             superSale: false,
-            notAvailable: true,
+            notAvailable: false,
             ingredients: [
                 "Olives",
                 "Poulet roti",

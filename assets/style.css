@@ -102,11 +102,13 @@ input {
 }
 
 .sauces li {
+    list-style: none;
     padding: 5px 15px;
     margin: 10px 0px;
     width: fit-content;
     border-radius: 20px;
     cursor: pointer;
+    color: white;
 }
 
 .sauces li:hover {
