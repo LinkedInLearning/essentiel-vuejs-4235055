@@ -46,18 +46,26 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <em>{{slogan}}</em>
+
                 <div class="promoValid">{{ isValidMsg }}</div>
+
+                <!-- Modal -->
+                <button id="show-modal" @click="showModal = true">Commander</button>
+                <teleport to="body">
+                    <my-modal :show="showModal" @close="showModal = false"></my-modal>
+                </teleport>
 
             </div>
 
             <!-- Section Produit -->
             <div class="product-section">
-
                 <product-component @add-product="addCard($event)" :bestseller="bestSellerProduct"></product-component>
-
             </div>
+
         </main>
+
         <!-- Section Footer -->
         <footer>
             <div id="footer">
@@ -68,7 +76,9 @@
                 <keep-alive>
                     <component :is="current">
                 </keep-alive>
+
             </div>
+
         </footer>
 
     </div>

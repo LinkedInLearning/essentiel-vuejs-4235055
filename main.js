@@ -2,12 +2,14 @@ import { createApp } from 'vue'
 import Product from './Product.js'
 import About from './About.js'
 import Contact from './Contact.js'
+import MyModal from './MyModal.js'
 
 const app = createApp({
     components: {
         ProductComponent: Product,
         About,
-        Contact
+        Contact,
+        MyModal
     },
     provide() {
         return {
@@ -22,7 +24,8 @@ const app = createApp({
             isValidMsg: "",
             bestSellerProduct: false,
             current: "About",
-            slogan: "Pizza Deluxe, c'est comme en Italie ;-) "
+            slogan: "Pizza Deluxe, c'est comme en Italie ;-) ",
+            showModal: false
         }
     },
     methods: {
