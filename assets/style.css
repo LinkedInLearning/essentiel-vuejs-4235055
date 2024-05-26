@@ -50,6 +50,13 @@ img {
     padding: 15px;
 }
 
+.img-best-seller {
+    height: 60px;
+    width: auto;
+    padding: 0;
+    margin-left: 10px;
+}
+
 input {
     width: 96%;
     height: 27px;

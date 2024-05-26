@@ -10,7 +10,8 @@ const app = createApp({
             totalPrice: 0,
             nbrProduct: 0,
             promo: "",
-            isValidMsg: ""
+            isValidMsg: "",
+            bestSellerProduct: false
         }
     },
     watch: {

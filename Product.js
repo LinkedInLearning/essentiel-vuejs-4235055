@@ -1,62 +1,71 @@
 export default {
     template: `
-                <!-- Image du produit -->
-            <div class="product-image">
-                <img :src="image" />
+        <!-- Image du produit -->
+        <div class="product-image">
+            <img :src="image" />
+        </div>
+
+        <!-- Description du produit -->
+        <div class="product-description">
+            <h1>
+                {{ title }}
+
+                <img v-show="this.bestseller" class="img-best-seller" src="assets/images/best-seller.png">
+            
+            </h1>
+
+            <p v-show="notAvailable">Momentanément indisponible</p>
+
+            <p v-if="superSale">
+                <span class="sale">{{ price }} € </span>
+                <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
+            </p>
+            <p v-else-if="classicSale">
+                <span class="sale">{{ price }} € </span>
+                <span class="new-price"> {{ price - 2}} € PROMOTION</span>
+            </p>
+            <p v-else>
+                <span class="price">{{ price }} €</span>
+            </p>
+
+            <br />
+            <strong>Ingrédients </strong>
+            <div>
+                <span v-for="(ingredient, index) in ingredients" :key="index">{{ ingredient + ", "}}
+                </span>
+            </div>
+            <br />
+
+            <div class="sauces">
+                <strong>Sauces au choix</strong>
+                <ul>
+                    <li :style="{backgroundColor : sauce.color}" @mouseover="updateImage(sauce.image)"
+                        v-for="sauce in sauces" :key="sauce.id">
+                        {{ sauce.type }}
+                    </li>
+                </ul>
             </div>
 
-            <!-- Description du produit -->
-            <div class="product-description">
-                <h1>{{ title }}</h1>
-
-                <p v-show="notAvailable">Momentanément indisponible</p>
-
-                <p v-if="superSale">
-                    <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 5}} € SUPER PROMOTION</span>
-                </p>
-                <p v-else-if="classicSale">
-                    <span class="sale">{{ price }} € </span>
-                    <span class="new-price"> {{ price - 2}} € PROMOTION</span>
-                </p>
-                <p v-else>
-                    <span class="price">{{ price }} €</span>
-                </p>
-
-                <br />
-                <strong>Ingrédients </strong>
-                <div>
-                    <span v-for="(ingredient, index) in ingredients" :key="index">{{ ingredient + ", "}}
-                    </span>
-                </div>
-                <br />
-
-                <div class="sauces">
-                    <strong>Sauces au choix</strong>
-                    <ul>
-                        <li :style="{backgroundColor : sauce.color}" @mouseover="updateImage(sauce.image)"
-                            v-for="sauce in sauces" :key="sauce.id">
-                            {{ sauce.type }}
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <strong>Valeurs nutritionnelles pour 100 grammes</strong>
-                    <ul>
-                        <li v-for="(value, name, index) in energy" :key="index">
-                            {{ name }} : {{ value }}
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Bouton d'ajout au panier -->
-                <button :class="{notActiveBtn : notAvailable === true}" @click="addProduct()"
-                    :disabled="notAvailable === true">Ajouter à ma commande</button>
-                <br /><br />
+            <div>
+                <strong>Valeurs nutritionnelles pour 100 grammes</strong>
+                <ul>
+                    <li v-for="(value, name, index) in energy" :key="index">
+                        {{ name }} : {{ value }}
+                    </li>
+                </ul>
             </div>
+
+            <!-- Bouton d'ajout au panier -->
+            <button :class="{notActiveBtn : notAvailable === true}" @click="addProduct()"
+                :disabled="notAvailable === true">Ajouter à ma commande</button>
+            <br /><br />
+        </div>
     `,
-
+    props: {
+        bestseller: {
+            type: Boolean,
+        }
+    },
     data() {
         return {
             product: "Pizza",
@@ -113,7 +122,7 @@ export default {
 
         updateImage(newLinkImage) {
             this.image = newLinkImage
-        }
+        },
     },
 
     computed: {
