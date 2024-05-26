@@ -1,10 +1,6 @@
 import { createApp } from 'vue'
-import Product from './components/Product.js'
 
 const app = createApp({
-    // components: {
-    //     ProductComponent: Product
-    // },
     data() {
         return {
             totalPrice: 0,
@@ -26,7 +22,5 @@ const app = createApp({
         },
     }
 })
-
-app.component('ProductComponent', Product)
 
 app.mount("#app")
