@@ -11,7 +11,7 @@ const app = createApp({
             nbrProduct: 0,
             promo: "",
             isValidMsg: "",
-            bestSellerProduct: false
+            bestSellerProduct: true
         }
     },
     watch: {
