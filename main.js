@@ -11,23 +11,28 @@ const app = createApp({
             nbrProduct: 0,
             promo: "",
             isValidMsg: "",
-            bestSellerProduct: true
+            bestSellerProduct: false
+        }
+    },
+    methods: {
+        addCard(price) {
+            this.nbrProduct += 1;
+            this.totalPrice = price
         }
     },
     watch: {
         promo(newValue, oldValue) {
-            if (newValue == "") {
+            if (newValue === "") {
                 this.isValidMsg = ""
-            }
-            else if (newValue == "royale") {
+            } else if (newValue === "royale") {
                 this.isValidMsg = "CODE PROMO VALIDE !"
             } else {
                 this.isValidMsg = "code promo invalide"
             }
-        },
+        }
     }
 })
 
-// app.component('ProductComponent', Product)
+//app.component('ProductComponent', Product)
 
 app.mount("#app")

@@ -63,7 +63,7 @@ export default {
     `,
     props: {
         bestseller: {
-            type: Boolean,
+            type: Boolean
         }
     },
     data() {
@@ -71,9 +71,10 @@ export default {
             product: "Pizza",
             type: "Orientale",
             price: 12,
+            totalPrice: 0,
             image: "assets/images/pizza1-tomate.jpg",
             classicSale: false,
-            superSale: false,
+            superSale: true,
             notAvailable: false,
             ingredients: [
                 "Olives",
@@ -110,7 +111,7 @@ export default {
 
     methods: {
         addProduct() {
-            this.nbrProduct += 1;
+
             if (this.superSale) {
                 this.totalPrice += this.price - 5
             } else if (this.classicSale) {
@@ -118,6 +119,8 @@ export default {
             } else {
                 this.totalPrice += this.price
             }
+
+            this.$emit("add-product", this.totalPrice)
         },
 
         updateImage(newLinkImage) {

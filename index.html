@@ -22,8 +22,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{ title }}</td>
-                        <td>{{ nbrProduct }}</td>
+                        <td>Total pizza</td>
+                        <td>x {{ nbrProduct }}</td>
                     </tr>
                     <tr>
                         <td>Code Promo</td>
@@ -46,15 +46,18 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="promoValid">{{isValidMsg}}</div>
+
+            <div class="promoValid">{{ isValidMsg }}</div>
+
         </div>
 
         <!-- Section Produit -->
         <div class="product-section">
 
-            <product-component :bestseller="bestSellerProduct"></product-component>
+            <product-component @add-product="addCard($event)" :bestseller="bestSellerProduct"></product-component>
 
         </div>
+
     </div>
 
     <!-- JS -->
