@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-#app {
+main {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -35,6 +35,33 @@ button:hover {
 .cart {
     margin-right: 40px;
     margin-top: 40px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    margin-bottom: 300px;
+}
+
+footer button {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+footer button:hover {
+    background-color: #d0021b;
+    color: white;
 }
 
 h1 {

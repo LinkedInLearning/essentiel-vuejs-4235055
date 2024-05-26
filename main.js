@@ -1,9 +1,13 @@
 import { createApp } from 'vue'
 import Product from './Product.js'
+import About from './About.js'
+import Contact from './Contact.js'
 
 const app = createApp({
     components: {
-        ProductComponent: Product
+        ProductComponent: Product,
+        About,
+        Contact
     },
     data() {
         return {
@@ -11,7 +15,8 @@ const app = createApp({
             nbrProduct: 0,
             promo: "",
             isValidMsg: "",
-            bestSellerProduct: false
+            bestSellerProduct: false,
+            current: "About"
         }
     },
     methods: {
