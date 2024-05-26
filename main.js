@@ -9,6 +9,11 @@ const app = createApp({
         About,
         Contact
     },
+    provide() {
+        return {
+            message: this.slogan
+        }
+    },
     data() {
         return {
             totalPrice: 0,
@@ -16,7 +21,8 @@ const app = createApp({
             promo: "",
             isValidMsg: "",
             bestSellerProduct: false,
-            current: "About"
+            current: "About",
+            slogan: "Pizza Deluxe, c'est comme en Italie ;-) "
         }
     },
     methods: {

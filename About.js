@@ -5,5 +5,7 @@ export default {
             <p>123 Rue du chorizo  </p>
             <p>12000 Racletteville </p>
             <p>01 23 45 56 78 </p>
-        </div>`
+        </div>
+        <footer-child></footer-child>
+        `
 }
