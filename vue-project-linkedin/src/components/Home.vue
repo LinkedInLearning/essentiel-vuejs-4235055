@@ -12,7 +12,12 @@ export default {
 
 
 <template>
-    <div id="intro"></div>
+
+    <div id="intro">
+        <slot name="welcome"></slot>
+        <slot></slot>
+    </div>
+
     <h1>Notre Carte</h1>
     <div id="product-menu">
         <Product />
