@@ -1,5 +1,6 @@
 <script>
-import Home from "./components/Home.vue";
+import Home from './components/Home.vue'
+
 export default {
     components: {
         Home
@@ -16,22 +17,17 @@ export default {
         <a href="">HOME</a>
         <a href="">CONTACT</a>
     </nav>
-
     <section>
         <Home>
             <template v-slot:welcome>
-                <p>Bienvenue !</p>
+                <p>Bienvenue sur Pizza Deluxe !</p>
             </template>
-
-            <p>PROMOTION SUR LA 4 FROMAGE</p>
-            <p>NOUVEAUTE - PIZZA ROYALE</p>
-            <p>JEU CONCOURS</p>
+            <p>Offre du jour <br> PROMOTION sur la Pizza Royale</p>
         </Home>
     </section>
-    
 </template>
 
-
+ 
 <style>
 a {
     background: black;
@@ -47,9 +43,11 @@ a {
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
+
 a:hover {
     background: #2c3e50;
 }
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -59,14 +57,17 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+
 body {
     margin: 0;
 }
+
 #header {
     background: black;
     display: flex;
     justify-content: center;
 }
+
 section {
     display: flex;
     justify-content: space-around;
