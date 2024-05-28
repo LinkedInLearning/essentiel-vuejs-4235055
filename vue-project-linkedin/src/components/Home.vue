@@ -1,8 +1,3 @@
-<template>
-    <div id="intro"></div>
-    <div id="product-menu"></div>
-</template>
-
 <script>
 export default {
     data() {
@@ -14,6 +9,20 @@ export default {
     computed: {}
     };
 </script>
+
+
+<template>
+    <div id="intro"></div>
+    <h1>Notre Carte</h1>
+    <div id="product-menu">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+    </div>
+</template>
+
 
 <style>
 #intro {

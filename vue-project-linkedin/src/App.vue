@@ -1,5 +1,9 @@
 <script>
+import Home from "./components/Home.vue";
 export default {
+    components: {
+        Home
+    },
     data() {
         return {}
     },
@@ -12,7 +16,9 @@ export default {
         <a href="">HOME</a>
         <a href="">CONTACT</a>
     </nav>
-    <section></section>
+    <section>
+        <Home />
+    </section>
 </template>
 
 
