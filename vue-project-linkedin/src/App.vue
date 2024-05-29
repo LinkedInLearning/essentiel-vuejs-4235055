@@ -3,8 +3,8 @@
 <template>
 
     <nav id="header">
-        <router-link to="/">HOME</router-link>
-        <router-link to="/contact">CONTACT</router-link>
+        <router-link :to="{ name: 'Home' }">HOME</router-link>
+        <router-link :to="{ name: 'Contact' }">CONTACT</router-link>
     </nav>
 
     <router-view />
