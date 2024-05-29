@@ -1,10 +1,14 @@
 <script></script>
 
 <template>
+
     <nav id="header">
-        <a href="">HOME</a>
-        <a href="">CONTACT</a>
+        <router-link to="/">HOME</router-link>
+        <router-link to="/contact">CONTACT</router-link>
     </nav>
+
+    <router-view />
+    
 </template>
  
 <style>
