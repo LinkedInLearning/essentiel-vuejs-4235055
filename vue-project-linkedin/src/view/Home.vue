@@ -1,21 +1,10 @@
-<script>
-export default {
-    data() {
-        return {};
-    },
-
-    methods: {},
-
-    computed: {}
-    };
-</script>
-
+<script></script>
 
 <template>
 
     <div id="intro">
-        <slot name="welcome"></slot>
-        <slot></slot>
+        <p>Bienvenue sur Pizza Deluxe !</p>
+        <p>Offre du jour <br> PROMOTION sur la Pizza Royale</p>
     </div>
 
     <h1>Notre Carte</h1>

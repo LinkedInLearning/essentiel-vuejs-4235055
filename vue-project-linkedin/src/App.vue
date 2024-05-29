@@ -1,32 +1,11 @@
-<script>
-import Home from './components/Home.vue'
-
-export default {
-    components: {
-        Home
-    },
-    data() {
-        return {}
-    },
-}
-</script>
-
+<script></script>
 
 <template>
     <nav id="header">
         <a href="">HOME</a>
         <a href="">CONTACT</a>
     </nav>
-    <section>
-        <Home>
-            <template v-slot:welcome>
-                <p>Bienvenue sur Pizza Deluxe !</p>
-            </template>
-            <p>Offre du jour <br> PROMOTION sur la Pizza Royale</p>
-        </Home>
-    </section>
 </template>
-
  
 <style>
 a {
