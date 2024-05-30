@@ -20,6 +20,7 @@ const routes = [
         path: '/products/:nameProduct',
         name: "product-details",
         component: ProductDetails,
+        props: true
     },
     {
         path: '/:catchAll(.*)',

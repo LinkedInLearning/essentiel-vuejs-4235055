@@ -19,7 +19,7 @@ export default {
                 <h3>Pizza {{ type }}</h3>
                 <p>Prix : {{ price }} €</p>
                 <p>{{ ingredients }}</p>
-                <router-link :to="{ name: 'product-details', params: { nameProduct: 'mon-parametre' } }">
+                <router-link :to="{ name: 'product-details', params: { nameProduct: type } }">
                     Commander >>
                 </router-link>
         </div>
