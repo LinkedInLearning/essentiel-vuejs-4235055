@@ -19,9 +19,9 @@ export default {
                 <h3>Pizza {{ type }}</h3>
                 <p>Prix : {{ price }} €</p>
                 <p>{{ ingredients }}</p>
-                <a href="">
+                <router-link :to="{ name: 'product-details', params: { name: 'un-parametre' } }">
                     Commander >>
-                </a>
+                </router-link>
         </div>
     </article>
 </template>

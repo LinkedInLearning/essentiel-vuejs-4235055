@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../view/Home.vue";
 import Contact from "../view/Contact.vue";
 import NotFound from "../view/NotFound.vue";
+import ProductDetails from "../view/ProductDetails.vue";
 
 const routes = [
     {
@@ -13,14 +14,13 @@ const routes = [
         path: "/contactez-nous",
         name: "Contact",
         component: Contact,
-        // Alias
-        //alias: "/contact"
+        alias: "/contact"
     },
-    // Redirection
-    // {
-    //   path: "/contact",
-    //   redirect: {name: "Contact"}
-    // },
+    {
+        path: '/products/:name',
+        name: "product-details",
+        component: ProductDetails,
+    },
     {
         path: '/:catchAll(.*)',
         component: NotFound
