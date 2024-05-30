@@ -13,14 +13,8 @@ const routes = [
         path: "/contactez-nous",
         name: "Contact",
         component: Contact,
-        // Alias
-        //alias: "/contact"
+        alias: "/contact"
     },
-    // Redirection
-    // {
-    //   path: "/contact",
-    //   redirect: {name: "Contact"}
-    // },
     {
         path: '/:catchAll(.*)',
         component: NotFound
