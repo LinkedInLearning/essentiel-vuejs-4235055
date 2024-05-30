@@ -5,7 +5,8 @@ import pizza1CremeImg from '../assets/images/pizza1-creme.jpg'
 export default {
     data() {
         return {
-            product: "Pizza",
+            product: "Pizza ",
+            name : "Royale",
             price: 12,
             img : pizza1TomateImg,
             sale: false,
@@ -63,7 +64,7 @@ export default {
 
     computed: {
         title() {
-            return this.product + " "// + this.name;
+            return this.product + this.name;
         }
     }
 };
@@ -118,7 +119,8 @@ export default {
             <!-- Description du produit -->
             <div class="product-description">
                 <h1>
-                    {{ title }}
+                    <!-- {{ title }} -->
+                    {{ $route.params.name }}
                     <img class="img-best-seller" src="../assets/images/best-seller.png" />
                 </h1>
                 <p v-show="notAvailable">Momentanément indisponible</p>
