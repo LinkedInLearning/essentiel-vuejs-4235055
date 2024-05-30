@@ -17,7 +17,7 @@ const routes = [
         alias: "/contact"
     },
     {
-        path: '/products/:name',
+        path: '/products/:nameProduct',
         name: "product-details",
         component: ProductDetails,
     },

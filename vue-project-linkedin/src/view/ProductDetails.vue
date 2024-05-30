@@ -120,7 +120,7 @@ export default {
             <div class="product-description">
                 <h1>
                     <!-- {{ title }} -->
-                    {{ $route.params.name }}
+                    {{ $route.params.nameProduct }}
                     <img class="img-best-seller" src="../assets/images/best-seller.png" />
                 </h1>
                 <p v-show="notAvailable">Momentanément indisponible</p>
@@ -173,151 +173,151 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 button {
-  background-color: #d0021b;
-  border-color: #d0021b;
-  color: #fff;
-  cursor: pointer;
-  font-family: "Oswald", sans-serif !important;
-  line-height: 20px;
-  margin: 20px auto;
-  max-width: initial;
-  min-width: initial;
-  padding: 12px;
-  text-align: center;
-  text-transform: uppercase !important;
-  width: 350px;
+    background-color: #d0021b;
+    border-color: #d0021b;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif !important;
+    line-height: 20px;
+    margin: 20px auto;
+    max-width: initial;
+    min-width: initial;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase !important;
+    width: 350px;
 }
 button:hover {
-  background-color: #b6132c;
+    background-color: #b6132c;
 }
 .notActiveBtn {
-  background-color: #f6f6f6;
-  border-color: #f6f6f6;
-  color: gray;
-  cursor: not-allowed;
-  text-decoration: line-through;
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+    color: gray;
+    cursor: not-allowed;
+    text-decoration: line-through;
 }
 .notActiveBtn:hover {
-  background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
 strong {
-  font-size: 18px;
+    font-size: 18px;
 }
 body {
-  /*background-color: #f2f2f2;*/
-  margin: 0px;
-  font-family: "Source Sans Pro";
-  font-size: 20px;
+    /*background-color: #f2f2f2;*/
+    margin: 0px;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
 }
 #section-product-details {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
 }
 h1 {
-  text-transform: capitalize;
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.1;
-  font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    font-family: "Roboto", sans-serif;
 }
 .new-price {
-  color: #c10a28;
-  font-weight: bold;
-  text-decoration: underline;
+    color: #c10a28;
+    font-weight: bold;
+    text-decoration: underline;
 }
 .sale {
-  color: #616161;
-  margin-right: 5px;
-  text-decoration: line-through;
+    color: #616161;
+    margin-right: 5px;
+    text-decoration: line-through;
 }
 img {
-  width: 90%;
-  padding: 15px;
+    width: 90%;
+    padding: 15px;
 }
 .product {
-  margin: 40px;
-  padding: 15px;
+    margin: 40px;
+    padding: 15px;
 }
 span.price {
-  color: #c10a28;
-  font-family: "Source Sans Pro";
-  font-size: 24px;
-  font-weight: 400;
+    color: #c10a28;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .product-description {
-  width: 47%;
+    width: 47%;
 }
 .product-image {
-  width: 52%;
+    width: 52%;
 }
 .product-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 40px 0px 40px 40px;
-  width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px 0px 40px 40px;
+    width: 80%;
 }
 .sauces li {
-  list-style: none;
-  padding: 5px 15px;
-  margin: 10px 0px;
-  width: fit-content;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
+    list-style: none;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    width: fit-content;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
 }
 .sauces li:hover {
-  color: black;
+    color: black;
 }
 .img-best-seller {
-  height: 60px;
-  width: auto;
-  padding: 0;
-  margin-left: 10px;
+    height: 60px;
+    width: auto;
+    padding: 0;
+    margin-left: 10px;
 }
 .cart {
-  margin-right: 40px;
-  margin-top: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
 }
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 table,
 th,
 td {
-  border: 1px solid black;
-  text-align: right;
-  padding-left: 10px;
-  padding-right: 10px;
+    border: 1px solid black;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 table thead th {
-  text-align: center;
+    text-align: center;
 }
 td {
-  width: 170px;
+    width: 170px;
 }
 td.code-promo {
-  padding: 0;
+    padding: 0;
 }
 
 /* Transition */
 .bounce-enter-active {
-  animation: bounce-in 0.5s;
+    animation: bounce-in 0.5s;
 }
 
 @keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 </style>
