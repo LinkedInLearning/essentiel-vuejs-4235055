@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            titre: "Pizza Royale",
+            types: ["royale", "orientale", "4 fromages", "barbecue", "vegetarienne"],
             price: 12,
             image: "../assets/images/pizza2.jpg",
             ingredients: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -13,13 +13,15 @@ export default {
 
 
 <template>
-    <article>
+    <article v-for="(type, index) in types" :key="index">
         <div class="product-img"></div>
-        <div class="product-description">
-            <h3>{{ titre }}</h3>
-            <p>Prix : {{ price }} €</p>
-            <p>{{ ingredients }}</p>
-            <a href=""> Commander >> </a>
+            <div class="product-description">
+                <h3>Pizza {{ type }}</h3>
+                <p>Prix : {{ price }} €</p>
+                <p>{{ ingredients }}</p>
+                <a href="">
+                    Commander >>
+                </a>
         </div>
     </article>
 </template>
