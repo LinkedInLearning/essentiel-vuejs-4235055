@@ -1,10 +1,18 @@
-<script></script>
+<script>
+import Likes from "../components/Likes.vue";
+export default {
+    components: {
+        Likes
+    }
+};
+</script>
 
 <template>
 
     <div id="intro">
         <p>Bienvenue sur Pizza Deluxe !</p>
         <p>Offre du jour <br> PROMOTION sur la Pizza Royale</p>
+        <Likes />
     </div>
 
     <h1>Notre Carte</h1>
