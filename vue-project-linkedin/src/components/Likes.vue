@@ -1,9 +1,9 @@
 <script>
+import { ref } from 'vue';
 export default {
-    data() {
-        return { 
-            nbrLikes : 7
-        };
+    setup() {
+        const nbrLikes = ref(7);
+        return { nbrLikes }
     }
 };
 </script>
