@@ -1,19 +1,17 @@
 <script>
-import { reactive, computed, toRefs } from 'vue';
+import { ref, computed } from 'vue';
 export default {
     setup() {
-        const event = reactive({
-            nbrLikes : 7,
-            message : "aime cette page",
-            info : computed( () => {
-                return event.nbrLikes + " " + event.message
-            })
-        })
+        const nbrLikes = ref(7);
+        const message = ref("aime cette page");
         function addLikes() {
-            event.nbrLikes++
+            nbrLikes.value++;
         }
-        return { ...toRefs(event), addLikes }
-    } 
+        const info = computed(() => {
+            return nbrLikes.value + " " + message.value;
+        });
+        return { nbrLikes, addLikes, message, info };
+  }
 };
 </script>
 
