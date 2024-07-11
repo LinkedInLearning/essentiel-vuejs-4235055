@@ -1,18 +1,7 @@
-<script>
-import { ref, computed } from 'vue';
-export default {
-    setup() {
-        const nbrLikes = ref(7);
-        const message = ref("aime cette page");
-        function addLikes() {
-            nbrLikes.value++;
-        }
-        const info = computed(() => {
-            return nbrLikes.value + " " + message.value;
-        });
-        return { nbrLikes, addLikes, message, info };
-  }
-};
+<script setup>
+import useLikes from "../use/use-likes.vue"
+const { nbrLikes, addLikes, message, info } = useLikes()
+;
 </script>
 
 <template>
