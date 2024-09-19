@@ -1,11 +1,10 @@
-# Nom final de la formation
+# L'essentiel de Vue.js
 
-Ce dossier Repository est lié au cours `L'essentie de Vue.js`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentiel de Vue.js`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-Si vous souhaitez apporter une solution web moderne à vos applications, découvrez cette formation consacrée à Vue.js. Maheva Dessart, développeuse web et experte en programmation, vous présente ce framework JavaScript populaire utilisé par de nombreuses entreprises telles que Google, Adobe ou Microsoft. Ce cours s'adresse aux développeurs débutants ou de niveau intermédiaire qui ont de bonnes connaissances en HTML, CSS et JavaScript. Vous aborderez un ensemble évolué d'outils qui permet de créer des applications puissantes et performantes, et de vous faire gagner du temps. Ainsi, vous verrez comment développer une application de manière complète et intuitive.
-
+Cette formation animée par Maheva Dessart vous guide à travers le framework Vue.js, un outil puissant pour construire des interfaces utilisateur. Vous commencerez par l’installation de Vue.js et la compréhension de son instance, puis vous aborderez des concepts clés comme la réactivité, l’interpolation de texte, les directives et les événements. Vous apprendrez également à manipuler les styles, à créer des composants, à gérer les routes avec Vue Router, et vous utiliserez l'API de composition pour organiser vos projets.
 
 ## Instructions
 
@@ -21,10 +20,8 @@ La branche master correspond au code à la fin de la formation.
 ## Installation
 
 1. Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-   - [Liste des logiciels/dépendances utiles à la formation] 
+   - Installer Node.js version 18.3 ou plus (https://nodejs.org/fr)
 2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-3. [Instructions spécifiques au cours] 
-
 
 ### Formateur
 
@@ -33,8 +30,8 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-22426755
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQHTZ8wdqZeUvA/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1726053132990?e=2147483647&v=beta&t=Diiu-QBFcoziKE4drHgjVdo-Lk2iaDkdE9pNZY-9PFs
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
 
 [1]: # (End of FR-Instruction ###############################################################################################)
