@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours `L'essentiel de Vue.js`. Le cours entier
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Cette formation animée par Maheva Dessart vous guide à travers le framework Vue.js, un outil puissant pour construire des interfaces utilisateur. Vous commencerez par l’installation de Vue.js et la compréhension de son instance, puis vous aborderez des concepts clés comme la réactivité, l’interpolation de texte, les directives et les événements. Vous apprendrez également à manipuler les styles, à créer des composants, à gérer les routes avec Vue Router, et vous utiliserez l'API de composition pour organiser vos projets.
 
 ## Instructions
 
@@ -30,8 +30,8 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-22426755/
-[lil-thumbnail-url]: https://
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-22426755
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQHTZ8wdqZeUvA/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1726053132990?e=2147483647&v=beta&t=Diiu-QBFcoziKE4drHgjVdo-Lk2iaDkdE9pNZY-9PFs
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
 
 [1]: # (End of FR-Instruction ###############################################################################################)
