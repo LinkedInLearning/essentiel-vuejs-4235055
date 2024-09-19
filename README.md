@@ -1,6 +1,6 @@
-# Nom final de la formation
+# L'essentiel de Vue.js
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentiel de Vue.js`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
@@ -27,12 +27,12 @@ La branche master correspond au code à la fin de la formation.
 
 ### Formateur
 
-**Nom du formateur** 
+**Maheva DESSART** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-22426755/
 [lil-thumbnail-url]: https:
 [lil-URL-trainer]: https://
 
