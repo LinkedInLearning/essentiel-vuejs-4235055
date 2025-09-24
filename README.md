@@ -6,6 +6,8 @@ Ce dossier Repository est lié au cours `L'essentiel de Vue.js`. Le cours entier
 
 Cette formation animée par Maheva Dessart vous guide à travers le framework Vue.js, un outil puissant pour construire des interfaces utilisateur. Vous commencerez par l’installation de Vue.js et la compréhension de son instance, puis vous aborderez des concepts clés comme la réactivité, l’interpolation de texte, les directives et les événements. Vous apprendrez également à manipuler les styles, à créer des composants, à gérer les routes avec Vue Router, et vous utiliserez l'API de composition pour organiser vos projets.
 
+La meilleure façon d'apprendre un langage est de l'utiliser dans la pratique. C'est pourquoi ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. 
+
 ## Instructions
 
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
